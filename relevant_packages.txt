@@ -1,0 +1,15 @@
+    Dash by Plotly: Dash is a productive Python framework for building web analytic applications. It enables you to build interactive web applications with Plotly.js, React, and Flask. Dash allows you to create interactive plots, tables, and dashboards directly in Python.
+
+    Plotly: Plotly is a versatile graphing library that produces interactive, publication-quality graphs online. It supports various types of plots such as scatter plots, line plots, bar charts, heatmaps, and more. Plotly can be used standalone or integrated with Dash for web applications.
+
+    Matplotlib: Matplotlib is a widely used plotting library for Python. It provides a MATLAB-like interface and can generate high-quality static plots. Matplotlib is great for quickly visualizing data and creating static figures for reports or presentations.
+
+    Seaborn: Seaborn is built on top of Matplotlib and provides a high-level interface for drawing attractive and informative statistical graphics. It simplifies the process of creating complex visualizations like heatmaps, violin plots, and pair plots.
+
+    Pandas: Pandas is a powerful data manipulation library in Python. It provides data structures like DataFrame and Series, which are ideal for handling tabular data. Pandas can be used to preprocess and manipulate data before visualizing it with other libraries.
+
+    Bokeh: Bokeh is a Python library for interactive visualization that targets modern web browsers for presentation. It provides elegant, concise construction of versatile graphics, and affords high-performance interactivity over large or streaming datasets.
+
+    Folium: Folium is a Python library used for visualizing geospatial data. It builds on the strengths of the Leaflet.js library and allows users to create interactive maps directly in Python. Folium is great for visualizing data with a spatial component, such as GPS data or geographic distributions.
+
+    Altair: Altair is a declarative statistical visualization library for Python. It is based on the Vega and Vega-Lite visualization grammars and allows you to create complex visualizations with a simple and intuitive syntax.

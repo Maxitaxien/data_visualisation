@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Data Visualizer</title>
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    {% if file %}
+    <h4>You have entered the file:</h4>
+    <table>
+        <tr>
+            <th>Filename</th>
+            <th>Size</th>
+        </tr>
+        <tr>
+            <td>{{ file.filename }}</td>
+            <td>{{ file.filesize }}</td>
+        </tr>
+    </table>
+    {% else %}
+    <h4>Upload a file to see options!</h4>
+    {% endif %}
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <input type="file" id="input_file" name="input_file" accept="text/csv, image/jpg">
+        <input type="submit" value="Submit file">
+    </form>
+    {% if error_message %}
+        <p style="color: red;">{{ error_message }}</p>
+    {% endif %}
+</div>
+{% endblock %}
