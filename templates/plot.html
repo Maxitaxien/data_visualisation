@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="content">
+    <h4>Plot Options</h4>
+    <div class="plot-options">
+        <form action="{{ url_for('plot_option') }}" method="POST">
+            <button type="submit" name="option" value="plot1">Plot 1</button>
+        </form>
+        <form action="{{ url_for('plot_option') }}" method="POST">
+            <button type="submit" name="option" value="plot2">Plot 2</button>
+        </form>
+    </div>
+    <div class="form">
+        <form action="{{ url_for('index') }}" method="GET">
+            <input type="submit" value="Go back">
+        </form>
+    </div>
+</div>
+
+{% if plot_data %}
+<div class="plot">
+    <img src="{{ url_for('static', filename=plot_data) }}" alt="Plot Image">
+</div>
+{% endif %}
+{% endblock %}
